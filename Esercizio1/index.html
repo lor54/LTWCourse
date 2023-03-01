@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="" method="post" name="form1">
+            <table border="1">
+                <tr>
+                    <td align="right">Cognome</td>
+                    <td><input type="text" name="Cognome" size="40" maxlength="40" required></td>
+                </tr>
+                <tr>
+                    <td align="right">Nome</td>
+                    <td><input type="text" name="Nome" size="40" maxlength="40" required></td>
+                </tr>
+                <tr>
+                    <td align="right">Matricola</td>
+                    <td><input type="number" name="Matricola" size="7" maxlength="7" min="0" max="1234567" required></td>
+                </tr>
+                <tr>
+                    <td align="right">Regione di residenza</td>
+                    <td>
+                        <select name="Residenza" required>
+                            <option></option>
+                            <option value="Lazio">Lazio</option>
+                            <option value="Lombardia">Lombardia</option>
+                            <option value="Puglia">Puglia</option>
+                            <option value="Abruzzo">Abruzzo</option>
+                            <option value="Molise">Molise</option>
+                            <option value="Emilia Romagna">Emilia Romagna</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">E-Mail</td>
+                    <td><input type="email" name="Email" size="30" maxlength="30" required></td>
+                </tr>
+                <tr>
+                    <td align="right">Telefono</td>
+                    <td><input type="tel" name="Telefono" size="16" maxlength="16" required></td>
+                </tr>
+                <tr>
+                    <td align="right">Status</td>
+                    <td>
+                        <input type="text" name="Status" size="30" list="listastatus">
+                            <datalist id="listastatus">
+                            <option value="In corso">
+                            <option value="Fuori corso">
+                            <option value="Ripetente">
+                            <option value="Part-Time">
+                            </datalist>
+                        </input>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Richieste Particolari</td>
+                    <td>
+                        <textarea cols=60 rows=12 wrap="physical" name="commento"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="reset" value="Reset"></td>
+                    <td align="center"><input type="submit" value="Invio"></td>
+                </tr>
+            </table>
+        </form>        
+    </body>
+</html>

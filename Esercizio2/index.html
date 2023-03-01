@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="" method="post" name="form2">
+            <table border="1">
+                <tr>
+                    <td align="right">Cognome e Nome</td>
+                    <td><input type="text" pattern="[A-Za-z]*" name="nome" size="50" maxlength="50" required></td>
+                </tr>
+                <tr>
+                    <td align="right">Data di nascita</td>
+                    <td><input type="date" name="nascita" required></td>
+                </tr>
+                <tr>
+                    <td align="right">CAP</td>
+                    <td><input type="text" pattern="[0-9]{5}" name="CAP" size="5" maxlength="5"></td>
+                </tr>
+                <tr>
+                    <td align="right">Studente lavoratore</td>
+                    <td><input type="checkbox" name="lavoratore"></td>
+                </tr>
+                <tr>
+                    <td align="right">Foto</td>
+                    <td><input type="file" name="foto" accept="image/png, image/jpeg"></td>
+                </tr>
+                <tr>
+                    <td align="right">Descrizione del lavoro svolto</td>
+                    <td><input type="tel" name="Telefono" size="80" maxlength="80" required></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="reset" value="Reset"></td>
+                    <td align="center"><input type="submit" value="Invio"></td>
+                </tr>
+            </table>
+        </form>        
+    </body>
+</html>
